@@ -7,8 +7,8 @@ export default class ToDos extends Component {
         return (
             <Consumer>
                 {value => {
-                    const { todo } = value
-                    return todo.map(t => <Todo todo={t} key={t.id}></Todo>)
+                    const { todos } = value
+                    return todos.map(t => <Todo todo={t} key={t.id}></Todo>)
                 }}
             </Consumer>
     )
